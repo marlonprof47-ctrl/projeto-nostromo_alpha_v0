@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="wrapper">
   <title>Cadastro</title>
   <link rel="stylesheet" href="style_cadastro.css">
 </head>
-<body>
-  <div class="container">
-    <a href="#" class="back-arrow">←</a>
-    <h1 class="title">Cadastro</h1>
+<body><!-- Radios e labels -->
+<input type="radio" id="radio-aluno" name="tipo" checked>
+<label class="radio-label" for="radio-aluno">Aluno</label>
 
-    <form class="form">
-      <input type="text" placeholder="Nome Completo" required>
+<input type="radio" id="radio-professor" name="tipo">
+<label class="radio-label" for="radio-professor">Professor</label>
+
+<div class="form-container">
+  <!-- Formulário de Aluno -->
+  <div id="form-aluno" class="form">
+    <input type="text" placeholder="Nome Completo" required>
       <input type="email" placeholder="E-mail Institucional" required>
       <input type="text" name="Período" placeholder="Período" required>
       <input type="password" placeholder="Criar Senha" required>
@@ -20,11 +25,21 @@
       <input type="text" name="RA" placeholder="RA" required>
       <input type="text" name="Curso" placeholder="Curso" required>
       <button type="submit" class="btn">Cadastrar</button>
-
-
+  </div>
+  <!-- Formulário de Professor -->
+  <div id="form-professor" class="form">
+    <input type="text" placeholder="Nome Completo" required>
+      <input type="email" placeholder="E-mail Institucional" required>
+      <input type="password" placeholder="Criar Senha" required>
+      <input type="password" placeholder="Repetir Senha" required>
+      <input type="text" name="Cadastro" placeholder="Cadastro" required>
+      <button type="submit" class="btn">Cadastrar</button>
+  </div>
+</div>
     <div class="login-link">
       <a href="tela_de_login.html">Já tem uma conta? <span>Entrar</span></a>
     </div>
   </div>
+</div>
 </body>
 </html>
